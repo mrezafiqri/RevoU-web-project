@@ -1,0 +1,315 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS RESET END */
+
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+/* HEADER / NAVBAR */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    background-color: rgb(44, 44, 44);
+    box-shadow: 1px 4px 10px -4px rgb(0 0 0 / 50%);
+    -webkit-box-shadow: 1px 4px 10px -4px rgb(0 0 0 / 50%);
+    -moz-box-shadow: 1px 4px 10px -4px rgba(0,0,0,0.50);
+}
+
+.navbar div {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /* border: 5px solid lightgoldenrodyellow; */
+    /* background-color: aqua; */
+    display: flex;
+    border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+}
+
+.navbar .container div {
+    margin-top: 5px;
+    color: rgb(238, 238, 238);
+    border: 2px solid;
+    background-color: rgb(238, 238, 238);
+    margin-right: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.navbar .container div:hover {
+    color: rgb(66, 66, 66);
+    border: 2px solid;
+    background-color: rgb(66, 66, 66);
+    transition: 0.2s;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.button a:hover {
+    color: white;
+    transition: 0.2s;
+    
+}
+
+.logo {
+    margin-top: 5px;
+    margin-right: auto;
+}
+
+.img-logo {
+    width: auto;
+    height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        margin-left: 15px;
+        position: relative;
+        width: 100%;
+    }
+    .navbar .container {
+        flex-direction: column;
+    }
+
+    .navbar .container div {
+        width: 90%;
+        margin-left: 5px;
+    }
+
+    .button {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar .container .logo {
+        margin-left: 10px;
+        margin-top: -1px;
+        justify-content: center;
+        width: 90%;
+    }
+}
+
+/* ABOUT US */
+
+#about .container {
+    
+    background-color: white;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    border-radius: 7px 7px 7px 7px;
+-webkit-border-radius: 7px 7px 7px 7px;
+-moz-border-radius: 7px 7px 7px 7px;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) inset;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) inset;
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) inset;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.about-img {
+    margin-top: 10px;
+    width: 300px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* VALUE */
+
+.container-jasa {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+#value .container-jasa {
+    background-color: rgb(53, 175, 252);
+    margin-top: -100px;
+    margin-bottom: 20px;
+    border-radius: 50px 50px 0px 0px;
+-webkit-border-radius: 50px 50px 0px 0px;
+-moz-border-radius: 50px 50px 0px 0px;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) inset;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) inset;
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) inset;
+
+}
+
+.honest > .value-title {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.value-gallery {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero-img {
+    width: 200px;
+    height: auto;
+}
+
+.hero-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+
+/* VISI MISI */
+
+#visi-misi .container {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 7px 7px 7px 7px;
+-webkit-border-radius: 7px 7px 7px 7px;
+-moz-border-radius: 7px 7px 7px 7px;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) inset;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) inset;
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) inset;
+}
+
+.visi {
+    padding: 20px 20px 10px 20px;
+}
+
+.misi {
+    padding: 0 20px 10px 20px;
+}
+
+.visi-title, .misi-title {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.visi-subtext, .misi-subtext {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.footer h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}

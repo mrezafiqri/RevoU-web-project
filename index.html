@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="logo" target="_blank">
+                    <img src="assets/logo-rjch.png" alt="" class="img-logo">
+                </a>
+
+                <div class="button"><a href="index.html"> Home</a></div>
+                <div class="button"><a href="profile.html"> Profile</a></div>
+                <div class="button"><a href="#"> About</a></div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+        <!-- HERO START -->
+
+        <section id="hero">
+            <div class="container">
+                <div class="hero">
+
+                    <h1 class="hero-title">Hi <span id="nama"></span>, Welcome to Homepage</h1>
+
+                    <p class="hero-subtitle">Ini Website Latihan Pertama</p>
+
+                    <img class="img-slideshow" src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img class="img-slideshow" src="https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img class="img-slideshow" src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    
+                    <div class="hero-button">
+                        <button onclick="plusDivs(-1)">Previous</button>
+                        <button onclick="plusDivs(1)">Next</button>
+                    </div>
+                    
+                </div>
+
+                
+
+                <div class="hero-text">
+                    <p class="text-artikel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil distinctio ab deserunt eveniet non, itaque consequatur vitae veritatis vel fugit ea veniam voluptate nisi? Illo ducimus impedit vitae necessitatibus.</p> <br>
+                    <p class="text-artikel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga, beatae ullam itaque officiis eos quos tenetur ut, odio ipsum nam commodi temporibus, quae explicabo debitis id odit iusto libero ratione ipsam? Maxime nesciunt debitis eum deserunt. Vero laudantium aliquid ab voluptatem ut, totam pariatur rerum officia accusamus molestiae quaerat praesentium enim tempore ducimus adipisci repudiandae aspernatur! Suscipit, iure! Laborum tenetur tempore temporibus! Consequatur provident voluptates natus mollitia dolorum nesciunt! Commodi autem nobis explicabo beatae suscipit cumque omnis quidem at, animi voluptates magni aliquid accusamus dolore consequatur? Et placeat voluptates blanditiis saepe qui earum quod expedita veritatis, magnam optio ullam.</p>
+                </div>
+            </div>
+            <hr class="hero-line">
+        </section>
+
+        <!-- HERO END -->
+
+        <!-- HEADQUARTER START -->
+
+        <section id="headquarter">
+            <div class="container">
+                <div class="head">
+                    <h1 class="headquarter-title">Our Headquarter</h1>
+                    <div class="headquarter-gallery">
+                        <div class="city">
+                            <img class="headquarter-img" src="assets/Banjarmasin.jpg" alt="Banjarmasin" >
+                            <h3>Banjarmasin</h3>
+                        </div>
+                        <div class="city">
+                            <img class="headquarter-img" src="assets/Banjarbaru.jpg" alt="Banjarbaru" >
+                            <h3>Banjarbaru</h3>
+                        </div>
+                        <div class="city">
+                            <img class="headquarter-img" src="assets/Martapura.jpg" alt="Martapura" >
+                            <h3>Martapura</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hero-line">
+        </section>
+
+        <!-- HEADQUARTER END -->
+
+        <!-- FORM START -->
+
+        <section id="form-table">
+            <div class="container">
+                <div class="form">
+                    <form name="message-form" onsubmit="return validateForm()">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="name">Nama </label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="name" name="full-name" placeholder="Nama">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="ttl">Tanggal Lahir</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" id="ttl" name="birth-date">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="gender">Jenis Kelamin</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="radio" id="male" name="gender" value="Laki-laki">
+                                <label for="male">Laki-laki</label>
+                                <input type="radio" id="female" name="gender" value="Perempuan">
+                                <label for="female">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="pesan">Pesan</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="pesan" name="messages" placeholder="Pesan"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="button" value="submit" style="width: 100%;">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="table">
+                    <table class="table-data">
+                        <tr>
+                            <th>Nama </th>
+                            <th>Tanggal Lahir</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Pesan</th>
+                        </tr>
+                        <tr>
+                            <td><span id="sender-full-name"></span></td>
+                            <td><span id="sender-birth-date"></span></td>
+                            <td><span id="sender-gender"></td>
+                            <td><span id="sender-messages"></td>
+                        </tr>
+                        
+                        
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FORM END -->
+
+
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer style="background-color: #ffcc5c;">
+        <div class="container">
+            <div class="footer">
+                <h1>Copyright RevoU | @mrezafiqri 2023</h1>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+<script src="js/index.js"></script>
+</html>
